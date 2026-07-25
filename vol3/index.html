@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>志心の会ニュース 第3号 ― 2026年7月OB例会 開催レポート</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #f6f1e6;
+    --paper: #fbf8f1;
+    --ink: #2b261f;
+    --ink-soft: #5a4f40;
+    --line: #d9cfb8;
+    --line-soft: #e9e0c9;
+    --accent: #5b3a3a;          /* 葡萄酒 */
+    --accent-soft: #8a5757;
+    --gold: #a98b4a;            /* 古金 */
+    --indigo: #2c3e54;          /* 藍 */
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.85;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{
+    max-width: 760px;
+    margin: 40px auto;
+    background: var(--paper);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 30px 60px -30px rgba(43,38,31,0.18);
+    border: 1px solid var(--line);
+  }
+  /* ====== Masthead ====== */
+  .masthead{padding: 44px 56px 28px;border-bottom: 1px solid var(--line);text-align: center;position: relative;}
+  .masthead::before, .masthead::after{content: '';position: absolute;left: 56px; right: 56px;height: 1px;background: var(--line);}
+  .masthead::before{top: 18px} .masthead::after{bottom: 12px}
+  .meta-top{font-family: 'Cormorant Garamond', serif;font-style: italic;font-size: 13px;color: var(--ink-soft);letter-spacing: .12em;margin-bottom: 18px;}
+  .title-jp{font-family: 'Noto Serif JP', serif;font-weight: 600;font-size: 34px;letter-spacing: .18em;color: var(--ink);margin-bottom: 8px;}
+  .title-en{font-family: 'Cormorant Garamond', serif;font-size: 13px;letter-spacing: .35em;color: var(--accent);text-transform: uppercase;margin-bottom: 22px;}
+  .issue-info{display: flex;justify-content: center;align-items: center;gap: 22px;font-size: 12px;color: var(--ink-soft);letter-spacing: .15em;}
+  .issue-info span{position: relative}
+  .issue-info span:not(:last-child)::after{content: '';position: absolute;right: -12px; top: 50%;width: 2px; height: 2px;border-radius: 50%;background: var(--ink-soft);transform: translateY(-50%);}
+  /* ====== Hero photo ====== */
+  .hero-photo{width: 100%;aspect-ratio: 16 / 7;overflow: hidden;position: relative;border-bottom: 1px solid var(--line);}
+  .hero-photo img{width: 100%;height: 100%;object-fit: cover;object-position: center 50%;display: block;filter: saturate(0.92) contrast(0.98);}
+  .hero-photo::after{content: '';position: absolute; inset: 0;background: linear-gradient(180deg, rgba(43,38,31,0) 55%, rgba(43,38,31,0.22) 100%);pointer-events: none;}
+  .hero-caption{position: absolute;left: 0; right: 0; bottom: 14px;text-align: center;color: #fbf8f1;font-family: 'Noto Serif JP', serif;font-size: 12px;letter-spacing: .25em;text-shadow: 0 1px 4px rgba(0,0,0,.5);z-index: 2;}
+  /* Hero placeholder (写真到着まで) */
+  .hero-photo.placeholder{background: linear-gradient(135deg, #efe7d3 0%, #e7dcc2 100%);display:flex;align-items:center;justify-content:center;}
+  .hero-photo.placeholder span{font-family:'Noto Serif JP',serif;color:var(--ink-soft);font-size:13px;letter-spacing:.2em;opacity:.7;}
+  /* ====== Lede ====== */
+  .lede{padding: 36px 56px 8px;text-align: center;}
+  .lede h2{font-family: 'Noto Serif JP', serif;font-weight: 500;font-size: 22px;letter-spacing: .1em;margin-bottom: 18px;line-height: 1.7;}
+  .lede p{color: var(--ink-soft);font-size: 15px;max-width: 580px;margin: 0 auto;text-align: left;}
+  .ornament{text-align: center;margin: 28px 0 4px;color: var(--gold);letter-spacing: 1.2em;font-size: 14px;}
+  /* ====== Section ====== */
+  section.article{padding: 28px 56px 8px;}
+  .section-head{display: flex;align-items: baseline;gap: 16px;padding-bottom: 14px;border-bottom: 1px solid var(--line);margin-bottom: 24px;}
+  .section-num{font-family: 'Cormorant Garamond', serif;font-size: 38px;line-height: 1;color: var(--accent);font-weight: 500;}
+  .section-title{font-family: 'Noto Serif JP', serif;font-weight: 600;font-size: 20px;letter-spacing: .06em;line-height:1.5;}
+  .section-kicker{font-family: 'Cormorant Garamond', serif;font-style: italic;font-size: 12px;color: var(--ink-soft);letter-spacing: .2em;margin-left: auto;white-space:nowrap;}
+  .article p{margin-bottom: 14px;color: var(--ink);}
+  .article p.lead{color: var(--ink-soft);font-size: 15px;}
+  .speaker-tag{font-family:'Noto Serif JP',serif;font-size:13px;color:var(--accent);letter-spacing:.08em;font-weight:500;margin-bottom:6px;}
+  /* ====== Info card ====== */
+  .info-card{background: #fffdf7;border: 1px solid var(--line-soft);padding: 22px 26px;margin: 18px 0 22px;}
+  .info-card dl{display: grid;grid-template-columns: 110px 1fr;row-gap: 10px;column-gap: 18px;font-size: 15px;}
+  .info-card dt{font-family: 'Noto Serif JP', serif;font-weight: 500;color: var(--accent);letter-spacing: .12em;font-size: 13px;padding-top: 2px;}
+  .info-card dd{color: var(--ink)}
+  .info-card dd strong{font-family: 'Noto Serif JP', serif;font-weight: 600;color: var(--ink);}
+  /* ====== Pull quote ====== */
+  .pullquote{margin: 20px 0 24px;padding: 18px 26px;border-left: 3px solid var(--accent);background: #faf5e9;font-family: 'Noto Serif JP', serif;font-size: 16px;color: var(--ink);line-height: 1.9;}
+  .pullquote::before{content: '“';font-family: 'Cormorant Garamond', serif;font-size: 36px;color: var(--gold);line-height: 0;vertical-align: -8px;margin-right: 6px;}
+  .pullquote .by{display:block;margin-top:8px;font-family:'Noto Sans JP',sans-serif;font-size:12px;color:var(--ink-soft);letter-spacing:.08em;}
+  /* ====== Inline photo ====== */
+  figure.inline-photo{margin: 26px 0;}
+  figure.inline-photo img{width: 100%;aspect-ratio: 4 / 3;object-fit: cover;object-position: center;display: block;border: 1px solid var(--line-soft);filter: saturate(0.92) contrast(0.98);}
+  figure.inline-photo .ph{width:100%;aspect-ratio:4/3;border:1px dashed var(--line);background:linear-gradient(135deg,#efe7d3,#e7dcc2);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'Noto Serif JP',serif;font-size:12px;letter-spacing:.2em;opacity:.8;}
+  figure.inline-photo figcaption{margin-top: 10px;font-size: 12px;color: var(--ink-soft);letter-spacing: .08em;text-align: center;font-family: 'Noto Serif JP', serif;}
+  /* ====== Highlight box ====== */
+  .highlight-box{margin: 24px 0;padding: 22px 26px;background: linear-gradient(180deg, #fbf6e7 0%, #f7efd6 100%);border: 1px solid var(--line);text-align: center;}
+  .highlight-box .kicker{font-family: 'Cormorant Garamond', serif;font-style: italic;color: var(--accent);font-size: 12px;letter-spacing: .3em;margin-bottom: 8px;}
+  .highlight-box .deadline{font-family: 'Noto Serif JP', serif;font-size: 24px;font-weight: 600;letter-spacing: .1em;color: var(--ink);margin-bottom: 6px;}
+  .highlight-box .small{font-size: 13px;color: var(--ink-soft);}
+  /* ====== takeaways ====== */
+  ul.todo{list-style: none;margin: 8px 0 18px;}
+  ul.todo li{padding: 10px 0 10px 26px;border-bottom: 1px dotted var(--line);position: relative;font-size: 15px;}
+  ul.todo li::before{content: '◇';position: absolute;left: 4px; top: 10px;color: var(--gold);font-size: 12px;}
+  ul.todo li:last-child{border-bottom: none}
+  /* ====== Footer ====== */
+  footer.colophon{margin-top: 12px;padding: 32px 56px 40px;border-top: 1px solid var(--line);text-align: center;color: var(--ink-soft);font-size: 12px;letter-spacing: .12em;line-height: 2;}
+  footer.colophon .seal{font-family: 'Noto Serif JP', serif;font-size: 18px;letter-spacing: .35em;color: var(--accent);margin-bottom: 6px;}
+  footer.colophon .seal-en{font-family: 'Cormorant Garamond', serif;font-style: italic;font-size: 12px;letter-spacing: .25em;color: var(--gold);margin-bottom: 14px;}
+  /* ====== Responsive ====== */
+  @media (max-width: 640px){
+    .wrap{margin: 0; border: none}
+    .masthead{padding: 30px 22px 22px}
+    .masthead::before, .masthead::after{left: 22px; right: 22px}
+    .title-jp{font-size: 26px; letter-spacing: .14em}
+    .lede{padding: 28px 22px 4px}
+    section.article{padding: 22px 22px 4px}
+    .info-card{padding: 18px 20px}
+    .info-card dl{grid-template-columns: 88px 1fr; column-gap: 12px}
+    footer.colophon{padding: 28px 22px 32px}
+    .issue-info{flex-direction: column; gap: 4px}
+    .issue-info span:not(:last-child)::after{display: none}
+    .section-kicker{display:none}
+  }
+</style>
+</head>
+<body>
+
+<article class="wrap">
+
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="meta-top">Newsletter from Shishin-no-Kai</div>
+    <h1 class="title-jp">志心の会 通信</h1>
+    <div class="title-en">SHISHIN&nbsp;NO&nbsp;KAI&nbsp;&nbsp;&middot;&nbsp;&nbsp;NEWSLETTER&nbsp;&nbsp;&middot;&nbsp;&nbsp;VOL.&nbsp;03</div>
+    <div class="issue-info">
+      <span>第&nbsp;3&nbsp;号</span>
+      <span>2026年7月26日</span>
+      <span>発行 ／ 志心の会 OB例会 企画チーム</span>
+    </div>
+  </header>
+
+  <!-- ============ HERO PHOTO ============ -->
+  <div class="hero-photo">
+    <img src="images/group-hero.jpeg" alt="2026年度 7月OB例会 参加者の集合写真" style="object-position:center 60%;">
+    <div class="hero-caption">2026年度&nbsp;&nbsp;7月OB例会 ／ マネゼミ出身者の実践報告</div>
+  </div>
+
+  <!-- ============ LEDE ============ -->
+  <div class="lede">
+    <h2>7月OB例会、盛会のうちに閉幕いたしました。</h2>
+    <p>本年度も恒例の <strong>7月OB例会</strong> を、7月25日（土）に開催いたしました。会場には各期のOB・OGが集い、本年度より新たに <strong>「マネゼミ出身者の実践報告」</strong> と呼称を改めたメインプログラムに、13期・中村 薫さんと9期・橋本 佳奈さんが登壇。保育の現場から、そして経営の現場から ―― マネゼミの学びが卒業後どう生きてきたかを、おふたりご自身の言葉で語っていただきました。本号では、当日の様子をレポートいたします。</p>
+    <div class="ornament">＊&nbsp;&nbsp;&nbsp;&nbsp;＊&nbsp;&nbsp;&nbsp;&nbsp;＊</div>
+  </div>
+
+  <!-- ============ SECTION 01 ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">01</div>
+      <div class="section-title">開催概要</div>
+      <div class="section-kicker">Overview</div>
+    </div>
+
+    <p class="lead">開会にあたり吉田会長より、快く登壇を引き受けたおふたりの挑戦を称える言葉と、マネゼミから少し離れているOBにも「当時の学び・志・主体性」を見つめ直す機会にしてほしいとのご挨拶がありました。</p>
+
+    <div class="info-card">
+      <dl>
+        <dt>名　　称</dt><dd><strong>志心の会 2026年度 7月OB例会</strong>（マネゼミ出身者の実践報告）</dd>
+        <dt>開 催 日</dt><dd>2026年7月25日（土）</dd>
+        <dt>登 壇 者</dt><dd><strong>中村　薫</strong> さん（13期）／ 合同会社コアン 代表<br><strong>橋本　佳奈</strong> さん（9期）／ 株式会社プラマコーポレーション 代表</dd>
+        <dt>締めの言葉</dt><dd>松尾 孝 校長</dd>
+        <dt>対　　象</dt><dd>志心の会会員（各期のOB・OG）</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 02 ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">02</div>
+      <div class="section-title">保育の中に、マネジメントがあった</div>
+      <div class="section-kicker">Report&nbsp;I</div>
+    </div>
+
+    <div class="speaker-tag">実践報告 ①　中村　薫 さん（13期）／ 合同会社コアン 代表</div>
+
+    <p>今年3月まで保育士として現場に立ち、4月に出張託児を軸とする合同会社コアンを立ち上げた中村さん。報告は、一冊の絵本『クレヨンのくろくん』の読み聞かせから始まりました。「他の色を消してしまう」と仲間から敬遠されていた黒。けれど、その黒を生かした一枚が、夜空にいくつもの花火を咲かせます。<strong>苦手や弱みに見えるものも、見方ひとつで誰かの価値になる</strong> ―― 絵本のなかにもマネジメントの本質が息づいていた、という気づきの共有でした。</p>
+
+    <p>中村さんが柱として挙げたのは、<strong>リフレーミング（見方を変える技術）</strong>、<strong>心理的安全性（安心して話せる場）</strong>、そしてその手段としての <strong>サークルタイム（輪になって一人ずつ語る対話）</strong> の三つ。いずれも保育の現場で磨かれ、そのまま家庭や職場にも通じるものばかりです。</p>
+
+    <p>印象的だったのは、「変えよう」としていたのは子どもではなく自分の見方だった、という転換の話。ある園児への関わり方を変えたところ、変わったのは本人よりも <strong>まわりの子どもたち</strong> の方だった ―― マネゼミで学んだ「変わるのは自分」が、現場の実感として腑に落ちた瞬間だったといいます。</p>
+
+    <div class="pullquote">
+      今日の講義のゴールは、私がご機嫌で帰ること。そして皆さんにも、ご機嫌で帰っていただくことです。
+      <span class="by">― 中村 薫 さん（13期）</span>
+    </div>
+
+    <p>会場では、六つのキーワードを前向きに言い換える「リフレーミング」の実践や、隣の人と一つのテーマを語り合う「サークルタイム」も。自信をなくしていた園児が、朝ごはんの小さな一言から仲間の憧れになり、やがて生活まで変えていった ―― そんな現場のエピソードに、うなずきと笑いが広がりました。最後に中村さんは、<strong>「一人ひとりの声が尊重され、安心して本音を言える"第三の居場所"をつくりたい」</strong> という志を掲げて報告を締めくくりました。</p>
+
+    <figure class="inline-photo">
+      <img src="images/talk-nakamura.jpeg" alt="中村 薫 さん（13期）登壇の様子">
+      <figcaption>実践報告 ① ／ 中村 薫 さん（13期）「保育の中にあったマネジメント」</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ SECTION 03 ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">03</div>
+      <div class="section-title">志と覚悟で変わった ― 自分を見せる時代に</div>
+      <div class="section-kicker">Report&nbsp;II</div>
+    </div>
+
+    <div class="speaker-tag">実践報告 ②　橋本　佳奈 さん（9期）／ 株式会社プラマコーポレーション 代表</div>
+
+    <p>モデル・タレント事務所を15年にわたり率いてきた橋本さん。報告のはじめに語られたのは、起業の原点でした。橋本さんは <strong>28歳のとき、深い喪失</strong> を経験します。外に出ることさえままならなかった時期、寄せられた一通のメッセージ ―― <strong>「あなたは人を元気にする人だ」</strong> ―― が、再び前を向くきっかけになったといいます。目の前の人を笑顔にし、その「ありがとう」に自分こそが支えられてきた。その気づきを胸に、<strong>29歳の誕生日に「幸せの運び人になろう」と志を定め</strong>、事業を届け出ました。</p>
+
+    <p>走りながら学んだ組織づくりの日々。当初は社員にマネゼミを受けさせるつもりが、先輩の一言で自らも共に受講することになり、<strong>「"こうあるべき"という鎧を脱ぎ、本当の自分をさらけ出せた」</strong>と振り返ります。福岡支店の開設と拡大、コロナ禍での組織の見直しを経て、現在はフラットな体制へ。当日は、AIを使って自分の生い立ちや志を言語化し客観視するワークにも、会場全員で挑戦しました。</p>
+
+    <div class="pullquote">
+      人は、志して変わる。リーダーは、覚悟で変わる。
+      <span class="by">― 橋本 佳奈 さん（9期）</span>
+    </div>
+
+    <p>SNSの時代、選ばれるのは会社ではなく「人」。だからこそ、飾らない生き様を見せていくことが問われる ―― そう語った橋本さんは、会場に一つの宿題を残しました。<strong>「あなたが人生を終えるとき、どんな人でありたいですか」</strong>。それぞれが自分に問い直す、静かな時間となりました。</p>
+
+    <figure class="inline-photo">
+      <img src="images/talk-hashimoto.jpeg" alt="橋本 佳奈 さん（9期）登壇の様子">
+      <figcaption>実践報告 ② ／ 橋本 佳奈 さん（9期）「志と覚悟で変わった」</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ SECTION 04 参加者の声 ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">04</div>
+      <div class="section-title">会場から ― 同期・参加者の声</div>
+      <div class="section-kicker">Voices</div>
+    </div>
+
+    <p class="lead">報告のあとには、それぞれの質疑応答の時間も。とりわけ、同じ期をともに過ごした仲間からの言葉には、当日の会場をあたためる温度がありました。</p>
+
+    <p><strong>中村さんの報告</strong>には、13期の同期から声が上がりました。冒頭の絵本『クレヨンのくろくん』を受けて ―― 「黒はほかの色を消してしまう印象で、みんなが恐れていた。それが一転、シャープペンのひと工夫で花火になり、全員が生かされた。<strong>自分が苦手だ、邪魔だと思っている相手でも、考え方ひとつで大きく生かすことができる</strong>」。また別の同期からは、「会社で悩んでいることが、子どもたちの世界とほとんど変わらないと感じた。会社でも取り入れてみたいことがたくさんあった」との感想も。</p>
+
+    <div class="pullquote">
+      ここ最近ご無沙汰していたけれど、こんなふうに自分の言葉でアウトプットしている姿を見て、あらためて嬉しくなりました。「ご機嫌でいること」は、本当にキーワードですね。
+      <span class="by">― 会場より、かつての仲間から</span>
+    </div>
+
+    <p><strong>橋本さんの報告</strong>にも、旧知のOBから質問が寄せられました。「橋本さんはいつも明るく、元気で、キラキラしている。その前向きさの根っこには、いつも何を大切にしているのか」。橋本さんは <strong>「切り替えは、自分の理念。こう生きると決めているから、ぶれない」</strong> と答え、幼い頃、姉を誘って自転車で遠くまで“冒険”に出かけた思い出を、行動力の原点として振り返りました。</p>
+
+    <figure class="inline-photo">
+      <img src="images/voice-floor.jpeg" alt="会場から感想を述べるOB">
+      <figcaption>質疑応答 ／ 会場からも活発に感想・質問が寄せられました</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ SECTION 05 ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">05</div>
+      <div class="section-title">松尾校長より ― 志は、繰り返しのなかで本物になる</div>
+      <div class="section-kicker">Closing&nbsp;Words</div>
+    </div>
+
+    <p>締めくくりに、松尾 孝 校長よりお言葉をいただきました。おふたりの報告には、いずれも「志」という揺るがぬ軸があった、と。そして、多くのOBがうなずいたのが次の一節です。</p>
+
+    <div class="pullquote">
+      エンロールで志を発表する頃は、まだ"飾り物"でいい。それを数年間、繰り返し繰り返し掲げ続けるうちに、本物の自分に埋もれない志になっていく。自分のなかに志への思いが積み重なると、やがて人にも伝わるものになる。
+      <span class="by">― 松尾 孝 校長</span>
+    </div>
+
+    <p>マネゼミの学びは、卒業して終わるものではなく、繰り返し立ち戻りながら育てていくもの ―― おふたりの歩みが、その何よりの証しとなった夜でした。</p>
+  </section>
+
+  <!-- ============ SECTION 06 ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">06</div>
+      <div class="section-title">次回・12月OB例会のご案内</div>
+      <div class="section-kicker">Next</div>
+    </div>
+
+    <p>本年12月のOB例会は、テーマを <strong>「ビジネス交流」</strong> に据えて企画を進めております。志心の会の目的のひとつである「OB・OG同士のビジネス交流への寄与」に正面から取り組む回です。メイン登壇に加え、ご参加の皆さまそれぞれによる自社紹介の時間も設ける予定です。</p>
+
+    <div class="highlight-box">
+      <div class="kicker">SAVE&nbsp;THE&nbsp;DATE</div>
+      <div class="deadline" style="font-size:20px;line-height:1.6;">12月OB例会 ／ テーマ「ビジネス交流」</div>
+      <div class="small" style="margin-top:10px;">2026年12月 上旬〜中旬（金または土曜を予定）。詳細は本通信および公式LINEにて改めてご案内いたします。</div>
+    </div>
+
+    <p style="font-size:14px;color:var(--ink-soft);">当日ご参加いただいた皆さま、そして遠方より心を寄せてくださった皆さま、ありがとうございました。ご感想・ご要望、次回登壇のご意向などは、志心の会 OB例会 企画チーム（佐々木・中村・新町・清田）まで、公式LINEよりお気軽にお寄せください。</p>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="article" style="padding-bottom:36px;">
+    <div class="ornament">＊&nbsp;&nbsp;&nbsp;&nbsp;＊&nbsp;&nbsp;&nbsp;&nbsp;＊</div>
+    <p style="text-align:center;font-family:'Noto Serif JP',serif;font-size:16px;color:var(--ink);line-height:2;margin-top:16px;">
+      それぞれの現場で志を育て続けるOB・OGの姿に、多くの気づきをいただいた一夜でした。<br>
+      次は12月、また皆さまとお会いできますことを、企画チーム一同、心より楽しみにしております。
+    </p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="colophon">
+    <div class="seal">志　心　の　会</div>
+    <div class="seal-en">SHISHIN&nbsp;NO&nbsp;KAI</div>
+    <div>発行 ／ 志心の会 OB例会 企画チーム</div>
+    <div>第 3 号 ／ 2026年7月26日 発行</div>
+    <div style="margin-top:8px;font-size:11px;color:var(--ink-soft);opacity:.8;">次号予告 ／ Vol.04 ― 12月OB例会「ビジネス交流」のご案内</div>
+  </footer>
+
+</article>
+
+</body>
+</html>
