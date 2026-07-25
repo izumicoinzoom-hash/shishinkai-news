@@ -85,6 +85,12 @@
   figure.inline-photo img{width: 100%;aspect-ratio: 4 / 3;object-fit: cover;object-position: center;display: block;border: 1px solid var(--line-soft);filter: saturate(0.92) contrast(0.98);}
   figure.inline-photo .ph{width:100%;aspect-ratio:4/3;border:1px dashed var(--line);background:linear-gradient(135deg,#efe7d3,#e7dcc2);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-family:'Noto Serif JP',serif;font-size:12px;letter-spacing:.2em;opacity:.8;}
   figure.inline-photo figcaption{margin-top: 10px;font-size: 12px;color: var(--ink-soft);letter-spacing: .08em;text-align: center;font-family: 'Noto Serif JP', serif;}
+  figure.inline-photo.small img{aspect-ratio: 3 / 2;}
+  /* ====== Gallery ====== */
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0 6px;}
+  .gallery-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border:1px solid var(--line-soft);filter:saturate(0.92) contrast(0.98);}
+  .gallery-note{font-size:12px;color:var(--ink-soft);letter-spacing:.08em;text-align:center;font-family:'Noto Serif JP',serif;margin-top:10px;}
+  @media(max-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:6px;}}
   /* ====== Highlight box ====== */
   .highlight-box{margin: 24px 0;padding: 22px 26px;background: linear-gradient(180deg, #fbf6e7 0%, #f7efd6 100%);border: 1px solid var(--line);text-align: center;}
   .highlight-box .kicker{font-family: 'Cormorant Garamond', serif;font-style: italic;color: var(--accent);font-size: 12px;letter-spacing: .3em;margin-bottom: 8px;}
@@ -161,9 +167,15 @@
         <dt>開 催 日</dt><dd>2026年7月25日（土）</dd>
         <dt>登 壇 者</dt><dd><strong>中村　薫</strong> さん（13期）／ 合同会社コアン 代表<br><strong>橋本　佳奈</strong> さん（9期）／ 株式会社プラマコーポレーション 代表</dd>
         <dt>締めの言葉</dt><dd>松尾 孝 校長</dd>
+        <dt>司会進行</dt><dd>簑田 さん（13期）</dd>
         <dt>対　　象</dt><dd>志心の会会員（各期のOB・OG）</dd>
       </dl>
     </div>
+
+    <figure class="inline-photo small">
+      <img src="images/mc-minoda.jpeg" alt="司会進行の簑田さん">
+      <figcaption>司会進行 ／ 簑田 さん（13期）が、当日のプログラムをあたたかく進めてくださいました</figcaption>
+    </figure>
   </section>
 
   <!-- ============ SECTION 02 ============ -->
@@ -282,6 +294,33 @@
     </div>
 
     <p style="font-size:14px;color:var(--ink-soft);">当日ご参加いただいた皆さま、そして遠方より心を寄せてくださった皆さま、ありがとうございました。ご感想・ご要望、次回登壇のご意向などは、志心の会 OB例会 企画チーム（佐々木・中村・新町・清田）まで、公式LINEよりお気軽にお寄せください。</p>
+  </section>
+
+  <!-- ============ SECTION 07 フォトアルバム ============ -->
+  <section class="article">
+    <div class="section-head">
+      <div class="section-num">07</div>
+      <div class="section-title">当日のフォトアルバム</div>
+      <div class="section-kicker">Photo&nbsp;Album</div>
+    </div>
+
+    <figure class="inline-photo">
+      <img src="images/two-shot.jpeg" alt="中村 薫さんと橋本 佳奈さん">
+      <figcaption>登壇を終えて ／ 中村 薫さん（13期）・橋本 佳奈さん（9期）</figcaption>
+    </figure>
+
+    <div class="gallery-grid">
+      <img src="images/gallery/g1.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g2.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g3.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g4.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g5.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g6.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g7.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g8.jpeg" alt="当日のひとこま">
+      <img src="images/gallery/g9.jpeg" alt="当日のひとこま">
+    </div>
+    <div class="gallery-note">実践報告・ワーク・質疑応答 ―― 会場のあちこちで生まれた学びと対話の記録より</div>
   </section>
 
   <!-- ============ CLOSING ============ -->
